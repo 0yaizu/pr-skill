@@ -1,6 +1,17 @@
 ---
 name: pr-summary
-description: Generate PR description from diff and optionally create a draft PR. Usage: /pr-summary [base-branch]
+description: |
+  Generate a PR description from the current branch diff and optionally create a draft PR.
+
+  Usage:
+    /pr-summary                  Auto-detect base branch (main → develop → master)
+    /pr-summary <base-branch>    Use specified branch as base (e.g. /pr-summary develop)
+
+  What it does:
+    1. Diffs current branch against base branch
+    2. Reads .github/pull_request_template.md if present
+    3. Generates PR title + body from commits and diff
+    4. Asks whether to create a GitHub draft PR via `gh`
 allowed-tools: [Read, Bash, Glob]
 ---
 
@@ -11,6 +22,11 @@ Generate a pull request description and optionally create a draft PR.
 ## Arguments
 
 `$ARGS` — optional base branch name. If omitted, auto-detect from `main` / `develop` / `master`.
+
+**Examples:**
+- `/pr-summary` — auto-detect base branch
+- `/pr-summary develop` — use `develop` as base
+- `/pr-summary release/1.0` — use `release/1.0` as base
 
 ## Steps
 

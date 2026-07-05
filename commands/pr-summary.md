@@ -1,5 +1,6 @@
 ---
 name: pr-summary
+argument-hint: "[base-branch]"
 description: |
   Generate a PR description from the current branch diff and optionally create a draft PR.
 

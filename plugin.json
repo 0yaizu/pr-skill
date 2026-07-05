@@ -1,0 +1,9 @@
+{
+  "name": "pr-skill",
+  "description": "PR description generator skill for personal use",
+  "author": {
+    "name": "kaira"
+  },
+  "version": "1.0.0",
+  "skills": ["./skills/pr"]
+}

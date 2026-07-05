@@ -5,5 +5,5 @@
     "name": "kaira"
   },
   "version": "1.0.0",
-  "skills": ["./skills/pr"]
+  "commands": ["./commands"]
 }

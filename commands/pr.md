@@ -1,7 +1,6 @@
 ---
 name: pr
 description: Generate a pull request description for the current branch
-argument-hint: "[base branch]"
 allowed-tools: [Read, Bash, Glob]
 ---
 

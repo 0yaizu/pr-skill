@@ -1,0 +1,22 @@
+{
+  "name": "0yaizu",
+  "owner": {
+    "name": "kaira"
+  },
+  "metadata": {
+    "description": "kaira's personal Claude Code skills"
+  },
+  "plugins": [
+    {
+      "name": "pr-skill",
+      "source": "./",
+      "description": "PR description generator skill for personal use",
+      "version": "1.0.0",
+      "author": {
+        "name": "kaira"
+      },
+      "keywords": ["pr", "git", "github"],
+      "category": "workflow"
+    }
+  ]
+}
